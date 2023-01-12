@@ -1,6 +1,6 @@
 /**
  * Marlin 3D Printer Firmware
- * Copyright (c) 2021 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ * Copyright (c) 2023 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
  * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
@@ -1167,7 +1167,6 @@
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
- * Updated E Steps to 382.14 for CR-10 V3 Direct Drive
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.00, 80.00, 400.00, 407 }
 
@@ -2052,12 +2051,12 @@
   #define BED_TRAMMING_INCLUDE_CENTER         // Move to the center after the last corner
   #if ENABLED(CR10V3_BLTOUCH)
     #define BED_TRAMMING_USE_PROBE
-  #endif
   #if ENABLED(BED_TRAMMING_USE_PROBE)
-    #define BED_TRAMMING_PROBE_TOLERANCE 0.1  // (mm)
+    #define BED_TRAMMING_PROBE_TOLERANCE 0.01  // (mm)
     #define BED_TRAMMING_VERIFY_RAISED        // After adjustment triggers the probe, re-probe to verify
     //#define BED_TRAMMING_AUDIO_FEEDBACK
   #endif
+#endif
 
   /**
    * Corner Leveling Order

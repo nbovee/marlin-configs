@@ -1,3 +1,3 @@
-Select printer for use, and copy-overwrite the three config files from the common section files into the Marlin folder. Lastly copy-overwrite the Statusscreen file from the department specific folder into the Marlin folder. Then flash the printer firmware.
+# Rowan Marlin Private
 
-Current version is Marlin 2.1.1
+Storage of printer calibration settings and files used to generate configuration files. Configuration files are now attached directly to the firmware branches in https://github.com/nbovee/Marlin/

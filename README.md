@@ -1,3 +1,3 @@
-# Rowan Marlin Private
+# Rowan Marlin Config
 
-Storage of printer calibration settings and files used to generate configuration files. Configuration files are now attached directly to the firmware branches in https://github.com/nbovee/Marlin/
+ini files submoduled in our fork of [Marlin](https://github.com/nbovee/Rowan-Marlin/). Base branch is the root version of the config for that marlin version, and other branches are variants for the departments as needed.
